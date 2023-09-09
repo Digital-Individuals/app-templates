@@ -40,17 +40,6 @@
     },
     {
       "type": 1,
-      "title": "Docker",
-      "description": "Docker in Docker!",
-      "categories": ["docker"],
-      "platform": "linux",
-      "logo": "https://d1q6f0aelx0por.cloudfront.net/product-logos/library-docker-logo.png",
-      "image": "docker:latest",
-      "interactive": true,
-      "command": "/bin/bash"
-    },
-    {
-      "type": 1,
       "title": "Pyhton",
       "description": "Python is an interpreted, interactive, object-oriented, open-source programming language.",
       "categories": ["operating-system"],
