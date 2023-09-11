@@ -173,7 +173,7 @@
         }
       ],
       "network": "traefik_default",
-      "hostname": "mycontainername"
+      "hostname": "dbapp1.digitalindividuals.com"
     },
     {
       "type": 1,
