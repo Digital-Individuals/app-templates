@@ -172,7 +172,8 @@
           "container": "/var/lib/mysql"
         }
       ],
-      "network": "traefik_default"
+      "network": "traefik_default",
+      "hostname": "dbapp1.digitalindividuals.com"
     },
     {
       "type": 1,
