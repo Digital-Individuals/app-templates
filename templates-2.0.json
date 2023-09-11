@@ -151,7 +151,7 @@
       "image": "mysql/mysql-server:5.7",
       "labels": [
         { "name": "traefik.enable", "value": "true" },
-        { "name": "traefik.http.routers.whoami.rule", "value": "Host(`dbapp1.digitalindividuals.com`)" },
+        { "name": "traefik.http.routers.whoami.rule", "value": "HostSNI(`*`)" },
         { "name": "traefik.http.routers.whoami.entrypoints", "value": "websecure" },
         { "name": "traefik.http.routers.whoami.tls.certresolver", "value": "myresolver" }
       ],
