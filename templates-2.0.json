@@ -165,6 +165,10 @@
           "name": "MYSQL_ROOT_HOST",
           "default": "%",
           "preset": true
+        },
+        {
+          "name": "DB_HOST",
+          "default": "dbapp1.digitalindividuals.com"
         }
       ],
       "ports": ["3306/tcp"],
