@@ -151,9 +151,9 @@
       "image": "mysql/mysql-server:5.7",
       "labels": [
         { "name": "traefik.enable", "value": "true" },
-        { "name": "traefik.http.routers.whoami.rule", "value": "Host(`dbapp1.digitalindividuals.com`)" },
-        { "name": "traefik.http.routers.whoami.entrypoints", "value": "mysql" },
-        { "name": "traefik.http.routers.whoami.tls.certresolver", "value": "myresolver" },
+        { "name": "traefik.http.routers.db.rule", "value": "Host(`dbapp1.digitalindividuals.com`)" },
+        { "name": "traefik.http.routers.db.entrypoints", "value": "mysql" },
+        { "name": "traefik.http.routers.db.tls.certresolver", "value": "myresolver" },
         { "name": "providers.docker.useBindPortIP", "value": "true"}
       ],
       "env": [
