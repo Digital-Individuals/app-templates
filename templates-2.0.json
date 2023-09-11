@@ -149,7 +149,6 @@
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/mysql.png",
       "image": "mysql/mysql-server:5.7",
-      "network": "traefik_default",
       "labels": [
         { "name": "traefik.enable", "value": "true" },
         { "name": "traefik.http.routers.whoami.rule", "value": "Host(`dbapp1.digitalindividuals.com`)" },
@@ -172,8 +171,8 @@
         {
           "container": "/var/lib/mysql"
         }
-      ]
-      
+      ],
+      "network": "traefik_default"
     },
     {
       "type": 1,
