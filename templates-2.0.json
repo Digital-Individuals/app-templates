@@ -149,6 +149,12 @@
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/mysql.png",
       "image": "mysql/mysql-server:5.7",
+      "labels": [
+        { "name": "traefik.enable", "value": "true" },
+        { "name": "traefik.http.routers.whoami.rule", "value": "Host(`container.digitalindividuals.com`)" },
+        { "name": "traefik.http.routers.whoami.entrypoints", "value": "websecure" },
+        { "name": "traefik.http.routers.whoami.tls.certresolver", "value": "myresolver" }
+      ],
       "env": [
         {
           "name": "MYSQL_ROOT_PASSWORD",
@@ -166,6 +172,7 @@
           "container": "/var/lib/mysql"
         }
       ]
+      
     },
     {
       "type": 1,
